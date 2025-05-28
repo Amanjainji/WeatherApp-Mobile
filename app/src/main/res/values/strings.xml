@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="logo">Logo</string>
+    <string name="weather_matters_we_got_your_details">Weather Matters: We got your Details</string>
+    <string name="_24_05_2025">24/05/2025</string>
+</resources>
