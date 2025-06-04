@@ -218,12 +218,12 @@
       <map>
         <entry key="com.example.weatherapp">
           <value>
-            <CheckInfo lastCheckTimestamp="1748365362450" />
+            <CheckInfo lastCheckTimestamp="1749062533070" />
           </value>
         </entry>
         <entry key="com.example.weatherapp.test">
           <value>
-            <CheckInfo lastCheckTimestamp="1748365362448" />
+            <CheckInfo lastCheckTimestamp="1749062533059" />
           </value>
         </entry>
       </map>

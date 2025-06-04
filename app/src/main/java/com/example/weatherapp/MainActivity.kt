@@ -2,8 +2,10 @@ package com.example.weatherapp
 
 import android.annotation.SuppressLint
 import android.content.ContentValues.TAG
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.widget.EditText
 import android.widget.SearchView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.text.SimpleDateFormat
 import java.util.Date
 import java.util.Locale
+
 
 //d910572acc2b7aa9f3fcc7f619c4c382
 class MainActivity : AppCompatActivity() {
@@ -111,13 +114,23 @@ class MainActivity : AppCompatActivity() {
 
     private fun changeImagesAccordingToCondition(condition:String) {
         when (condition) {
-            "Clear Sky", "Sunny", "Clear" -> {
+            "Clear Sky", "Sunny" -> {
                 binding.root.setBackgroundResource(R.drawable.sunny_background)
                 binding.lottieAnimationView2.setAnimation(R.raw.sun)
             }
 
-            "Partly Clouds", "Clouds","Overcast", "Mist", "Foggy" -> {
+            "Clear" -> {
+                binding.root.setBackgroundResource(R.drawable.clear_background)
+                binding.lottieAnimationView2.setAnimation(R.raw.sun)
+            }
+
+            "Overcast", "Mist", "Foggy" -> {
                 binding.root.setBackgroundResource(R.drawable.colud_background)
+                binding.lottieAnimationView2.setAnimation(R.raw.cloud)
+            }
+
+            "Partly Clouds", "Clouds"-> {
+                binding.root.setBackgroundResource(R.drawable.cloudy_background)
                 binding.lottieAnimationView2.setAnimation(R.raw.cloud)
             }
 
